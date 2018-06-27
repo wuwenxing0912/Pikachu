@@ -6,13 +6,13 @@
         $(e.currentTarget).addClass('active').siblings('.active').removeClass('active')
         switch (newSpeed) {
             case 'slow':
-                speed = 100;
+                speed = 80;
                 break
             case 'mid-speed':
-                speed = 50;
+                speed = 30;
                 break
             case 'fast':
-                speed = 10;
+                speed = 8;
                 break
         }
     })
