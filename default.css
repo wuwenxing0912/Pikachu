@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    background: #eee;
+    font-weight: bold;
+}
+
+.code-wrapper {
+    flex: 1;
+    height: 50%;
+}
+
+.preview-wrapper {
+    flex: 1;
+    height: 50%;
+}
+
+.code {
+    height: 100%;
+    overflow: auto;
+    padding: 16px;
+}
+
+.switch-speed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.switch-speed>button {
+    margin: 15px 30px 10px 15px;
+    padding: 5px;
+    border: none
+}
+
+.switch-speed>button.active {
+    box-shadow: 0 0 1px 1px;
+}
+
+.switch-speed>button:focus {
+    outline: none;
+}
+
+.token.selector {
+    color: black;
+}
+
+.token.property {
+    color: black;
+}
+
+.token.function {
+    color: black;
+}
