@@ -1,5 +1,5 @@
 ! function() {
-    var speed = 50
+    var speed = 30
     $('.switch-speed').on('click', 'button', (e) => {
         newSpeed = $(e.currentTarget).attr('show-speed')
         console.log(newSpeed)
